@@ -1,3 +1,4 @@
+import { NavbarComponent } from './navbar/navbar.component';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
@@ -6,7 +7,7 @@ import { TripListingComponent } from './trip-listing/trip-listing.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, TripListingComponent],
+  imports: [CommonModule, RouterOutlet, TripListingComponent, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
